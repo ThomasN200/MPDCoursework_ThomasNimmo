@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ Matriculation Number - S1625410
+ Name - Thomas Nimmo
+ -->
+
+    <LinearLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#82CAFA"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/searchListView" android:hint="Search the feeds (enter date info as DD Month YYYY i.e 30 October 2018)"/>
+
+</LinearLayout>
+    <LinearLayout android:layout_height="80dip"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:id="@+id/listViewHeaderaLayout"
+        android:gravity="center"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip">
+
+    <Button android:layout_height="80dip"
+        android:layout_width="0dip"
+        android:background="@android:color/white"
+        android:id="@+id/plannedRoadworks"
+        android:layout_weight="1"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="Planned Roadworks"
+        android:textColor="@android:color/background_dark"/>
+
+    <Button android:layout_height="80dip"
+        android:layout_width="0dip"
+        android:background="@android:color/white"
+        android:id="@+id/currentIncidents"
+        android:layout_weight="1"
+        android:text="Current Incidents"
+        android:textColor="@android:color/background_dark"/>
+
+</LinearLayout>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/lvText"
+            android:text=""
+            android:textSize="20sp"/>
+
+    <ListView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/lvDisplay"
+        android:text=""
+        android:textSize="20sp"/>
+
+</LinearLayout>
+
+</LinearLayout>
